@@ -27,19 +27,21 @@ function askQuestion() {
     console.log(`Your Answer: ${candidateAnswers[i]}`);
     console.log(`Correct Answer: ${correctAnswers[i]}`);
   } 
-  
+
 }
 
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-  for (i=0;i<correctAnswers.length;i++) {
+
+
+ for (i=0;i<correctAnswers.length;i++) {
    if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()) {
     totalGrade++;
    } 
   }
   let grade;
-  grade = totalGrade / questions.length * 100;
+  grade = (totalGrade / questions.length) * 100;
   if (grade >= 80 ) {
     result = "passed";
    } else {
