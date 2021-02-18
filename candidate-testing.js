@@ -12,7 +12,6 @@ let questions = ["Who was the first American woman in space? " ,"True or false: 
 let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"];
 let candidateAnswers= [];
 let result = "";
-let totalGrade = 0;
  
 
 function askForName() {
@@ -32,6 +31,8 @@ function askQuestion() {
 
 function gradeQuiz(candidateAnswers) {
 
+  let totalGrade = 0;
+  
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   for (i=0;i<correctAnswers.length;i++) {
    if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()) {
