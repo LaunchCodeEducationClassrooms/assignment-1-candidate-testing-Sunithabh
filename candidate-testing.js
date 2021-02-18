@@ -41,7 +41,7 @@ function gradeQuiz(candidateAnswers) {
    } 
   }
   let grade;
-  grade = totalGrade / questions.length * 100;
+  grade = (totalGrade / questions.length) * 100;
   if (grade >= 80 ) {
     result = "passed";
    } else {
